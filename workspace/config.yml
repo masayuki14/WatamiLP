@@ -1,6 +1,6 @@
 output_dir: output
 output_file_name: index.html
-source_index_file: source_index.html
+source_index_file: source_index.erb
 source_image_dir:
 source_css_dir:
 source_javascript_dir:
