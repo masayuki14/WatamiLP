@@ -30,4 +30,16 @@ CSV.foreach(source_data) do |row|
   rows << Watami::Row.new(row)
 end
 
-p rows
+require 'erb'
+
+output_dir = File.join(ROOT_DIR, config['output_dir'])
+Dir.mkdir(output_dir) unless Dir.exists?(output_dir)
+
+erb_text = nil
+File.open(File.join(ROOT_DIR, config['source_index_file']), 'r') { |file| erb_text = file.read }
+File.open(File.join(output_dir, config['output_file_name']), 'w') do |file|
+  row = rows[0]
+  erb = ERB.new(erb_text)
+  file.write(erb.result(binding))
+end
+
