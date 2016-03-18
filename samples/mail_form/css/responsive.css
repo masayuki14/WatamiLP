@@ -1,0 +1,171 @@
+@media (min-width:769px) {
+}
+@media (max-width:768px) {/*画面サイズ768以下に対応*/
+.inquire tr {
+  border-bottom: 1px solid red;
+  display: block;
+  padding: 30px 0;
+}
+.inquire {
+  width: 90%;
+  margin:0 auto;
+}
+.txt-red{
+	color:#CC0000;
+}
+.inquire tr {
+  border-bottom: 1px solid  #999;
+  display: block;
+  padding: 30px 0px;
+}
+.inquire th {
+  display: block;
+  margin-bottom: 10px;
+  text-align: left;
+}
+.formRequired {
+  background-color: #CC0000;
+  color: white;
+  padding: 1px 10px;
+}
+.form_box4 {
+  width: 600px;
+}
+.form_box4 span {
+  line-height: 134%;
+}
+.caution {
+  line-height: 150%;
+  list-style: outside none none;
+  margin-left: 1em;
+}
+.form-day > span {
+  float: left;
+  width: 108px;
+}
+.sp-tr input{
+	width:100%;
+	padding:10px 0px;
+}
+.sp-tr textarea {
+  width: 100% !important;
+}
+.form_box2 > p {
+  line-height: 150%;
+}
+.contact-member_terms {
+  border: 1px solid #cc0000;
+  font-size: 10px;
+  margin: 10px;
+  padding: 10px;
+}
+.form-day input {
+  margin-right: 10px;
+  padding: 7px;
+  width: 23%;
+}
+.form-day {
+  display: block;
+  overflow: hidden;
+}
+.form_box4 select {
+  height: 30px;
+  width: 100px;
+}
+.btn-sub {
+  background-color: black;
+  background-image: url("../img/cmn/ico_arrow.png");
+  background-position: 97% 52%;
+  background-repeat: no-repeat;
+  background-size: 5% auto;
+  border: medium none;
+  color: white;
+  display: block;
+  height: 30px !important;
+  line-height: 62%;
+  margin-top: 20px;
+  padding: 10px 14px 10px 6px;
+}
+.contact-member_terms li {
+  list-style: outside none none;
+}
+.btn-sub-conf {
+  background-color: #ffcc00;
+  border: medium none;
+  border-radius: 5px;
+  color: black;
+  display: block;
+  font-weight: bold;
+  height: 60px;
+  margin: 0 auto;
+  width: 48%;
+}
+
+.btn-sub-conf:first-child {
+	/* float:left; */
+	background-color:#2eab2e;
+}
+
+.btn-sub-conf:last-child {
+	/* float:right; */
+}
+
+.box-contact-confirm #submit{
+	float:none;
+	text-align:center;
+}
+
+.rest-box{
+	border:2px  solid #0099FF;
+	padding:10px;
+}
+.input-box{
+	margin-bottom:20px;
+}
+.postal-txt > input {
+  height: 28px;
+}
+.contact-member_terms ul {
+    margin-left: 1.0em;
+}
+.contact-member_terms li {
+    text-indent: -1.0em;
+}
+.caution > li {
+  list-style: outside none none;
+  text-indent: -1em;
+}
+.inquire-txtarea textarea {
+  height: 100px;
+  width: 100%;
+}
+.inquire-txtarea > td {
+  display: block;
+  width: 100%;
+}
+.tel-box > input {
+  height: 20px;
+}
+.free-area > input {
+  height: 28px;
+  width: 100%;
+}
+.table-top {
+  margin: 0 auto;
+  width: 90%;
+}
+.box-contact-confirm{
+	margin-bottom:50px;
+	text-align:center;
+}
+
+#mail_form.inquire table{
+margin-bottom:30px;
+}
+
+
+
+
+}
+
+

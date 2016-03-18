@@ -1,0 +1,2 @@
+Action myphp-script /ms/mail_form/php.cgi
+AddHandler myphp-script .php .html

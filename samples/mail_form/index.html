@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+<html lang="ja">
+<head>
+<!-- Basic Page Needs
+================================================== -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="keywords" content="高校生,高校受験,個別指導,塾,東大,勉強方法,家庭教師">
+<meta name="description" content="東大生の家庭教師による高校生のためのオンライン個別指導。定期テスト対策や志望校合格のための徹底フォロー">
+<title>お申し込み内容入力 | オンライン家庭教師東大生ゼミ</title>
+<link href="css/style_form.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/page_form.css" rel="stylesheet">
+<link href="css/page.css" rel="stylesheet">
+<link href="css/responsive.css" rel="stylesheet">
+<link href="css/responsive_form.css" rel="stylesheet">
+<link href="css/responsive02.css" rel="stylesheet">
+<link href="css/cmn.css" rel="stylesheet">
+<link rel="stylesheet" href="css/reset.css">
+<link rel="icon" href="img/cmn/favicon.ico" type="image/gif">
+
+<!-- JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+
+<link rel="stylesheet" href="./css/validationEngine.jquery.css" type="text/css"/>
+<script src="./js/languages/jquery.validationEngine-ja.js" type="text/javascript" charset="utf-8"></script>
+<script src="./js/jquery.validationEngine.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="js/ajaxzip2/ajaxzip2.js" charset="UTF-8"></script>
+<script type="text/javascript" src="js/jquery.autoKana.js"></script>
+<script type="text/javascript" src="js/submit-value.js"></script>
+
+<script>
+$(document).ready(function(){
+jQuery("#mail_form").validationEngine();
+$.fn.autoKana('#last_name', '#last_name_kana', {katakana:true});
+$.fn.autoKana('#first_name', '#first_name_kana', {katakana:true});
+$.fn.autoKana('#guard_last_name', '#guard_last_name_kana', {katakana:true});
+$.fn.autoKana('#guard_first_name', '#guard_first_name_kana', {katakana:true});
+});
+</script>
+
+
+</head>
+<body id="top" onload="load()">
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MN6SKH"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MN6SKH');</script>
+<!-- End Google Tag Manager -->
+<div id="wrap"> 
+<!-- ヘッダーはここから -->
+<header id="header">
+<section class="header-in">
+<p class="logo"><a href="../index.html"><img src="img/cmn/logo_header.png" alt="オンライン家庭教師東大生ゼミ"></a></p>
+<p class="txt-header01">全国すべての高校生に個別授業が可能になりました。</p>
+<p class="btn-header01"><a href="http://school.soba-education.com/"><img src="img/cmn/btn_header01.jpg" alt="会員様専用ページ"></a></p>
+</section>
+</header>
+<!-- /ヘッダーはここまで -->
+  <section class="primary02"> 
+    <!-- メインカラムはここから -->
+    <main role="main">
+      <article>
+
+
+<noscript>
+<section style="border: 1px solid CCC; padding: 5px; color:#FF0000;">
+  このWebサイトを利用するためにはJavaScriptを有効にする必要があります。
+</section>
+</noscript>
+
+<!-- 申込フォロー -->
+<section class="app-flow inquire sp-none">
+<ul>
+<li><img src="img/page/pic_index.jpg" alt="お申込内容入力"></li>
+<li><img src="img/page/ico_arr.gif" alt="矢印"></li>
+<li><img src="img/page/pic_com02.jpg" alt="お申込内容確認"></li>
+<li><img src="img/page/ico_arr.gif" alt="矢印"></li>
+<li><img src="img/page/pic_app03.jpg" alt="お申込完了"></li>
+</ul>
+</section>
+<section class="app-flow pc-none w-sp-100"><img src="img/page/pic_index_sp.jpg" alt="お申し込み内容入力"></section>
+<!-- /申込フォロー -->
+        <form  class="inquire" method="POST" action="./conf.php" id="mail_form">
+          <!--お客様情報登録tableはここから-->
+          
+          <table class="m-b20">
+            <tbody>
+              <tr class="sp-tr">
+                <th>生徒様　お名前 <span class="formRequired">必須</span></th>
+                <td class="form_box4"><div><span class="txt-area">姓
+                    <input type="text" value="" id="last_name" name="last_name" class="validate[required]" size="20">
+                    </span> <span class="txt-area">名
+                    <input type="text" value="" id="first_name" name="first_name" class="validate[required]"  size="20">
+                    </span>
+
+                  </div></td>
+              </tr>
+              <tr class="sp-tr">
+                <th>生徒様　お名前（フリガナ） <span class="formRequired">必須</span></th>
+                <td class="form_box4"><div> <span class="txt-area">セイ
+                    <input type="text" value="" id="last_name_kana" class="validate[required]" name="last_name_kana">
+                    </span> <span class="txt-area">メイ
+                    <input type="text" value="" id="first_name_kana" class="validate[required]" name="first_name_kana">
+                    </span>
+
+                  </div></td>
+              </tr>
+              <tr>
+                <th>生徒様　生年月日 <span class="formRequired">必須</span></th>
+                <td class="form_box4"><div class="form-day"><span class="txt-area">
+                    <select name="year" id="year" class="validate[required]" >
+			<?php for ($i = 1990; $i < date('Y') - 5; $i++) { ?>
+				<option xml:lang="ja" lang="ja" value="<?php echo $i; ?>"><?php echo $i; ?></option>
+			<?php } ?>
+                    </select>
+                    年 </span> <span class="txt-area">
+                    <select name="month" id="month" class="validate[required]" >
+			<?php for ($i = 1; $i <= 12; $i++) { ?>
+				<option xml:lang="ja" lang="ja" value="<?php echo $i; ?>"><?php echo $i; ?></option>
+			<?php } ?>
+                    </select>
+
+                    月 </span> <span class="txt-area">
+                    <select name="day" id="day" class="validate[required]" >
+			<?php for ($i = 1; $i <= 31; $i++) { ?>
+				<option xml:lang="ja" lang="ja" value="<?php echo $i; ?>"><?php echo $i; ?></option>
+			<?php } ?>
+                    </select>
+                    日 </span> </div>
+                </td>
+              </tr>
+              <tr class="sp-tr">
+                <th>保護者様　お名前 <span class="formRequired">必須</span></th>
+                <td class="form_box4"><div><span class="txt-area">姓
+                    <input type="text" value="" id="guard_last_name" class="validate[required]" name="guard_last_name">
+                    </span> <span class="txt-area">名
+                    <input type="text" value="" id="guard_first_name" class="validate[required]" name="guard_first_name">
+                    </span>
+                  </div></td>
+              </tr>
+              <tr class="sp-tr">
+                <th>保護者様　お名前（フリガナ） <span class="formRequired">必須</span></th>
+                <td class="form_box4"><div> <span class="txt-area">セイ
+                    <input type="text" value="" id="guard_last_name_kana" class="validate[required]" name="guard_last_name_kana">
+                    </span> <span class="txt-area">メイ
+                    <input type="text" value="" id="guard_first_name_kana" class="validate[required]" name="guard_first_name_kana">
+                    </span>
+                  </div></td>
+              </tr>
+              <tr class="sp-tr">
+                <th>続柄 <span class="formRequired">必須</span></th>
+                <td class="form_box4"><div><span>
+                    <select name="relation" id="relation" class="validate[required]" >
+                      <option xml:lang="ja" lang="ja" value=""></option>
+                      <option xml:lang="ja" lang="ja" value="父">父</option>
+                      <option xml:lang="ja" lang="ja" value="母">母</option>
+                      <option xml:lang="ja" lang="ja" value="祖父">祖父</option>
+                      <option xml:lang="ja" lang="ja" value="祖母">祖母</option>
+                    </select>
+                    </span> </div></td>
+              </tr>
+              <tr>
+                <th>郵便番号 <span class="formRequired">必須</span></th>
+                <td class="form_box4"><ul class="caution">
+                    <li class="txt-red">※郵便番号を入力すると住所が自動入力されます。</li>
+                    <li>※半角数字</li>
+                  </ul>
+                  <span class="postal-txt">
+                  <input type="text" value="" id="zip1" name="zip1" style="ime-mode: disabled" class="validate[required,custom[number],minSize[3],maxSize[4]]"  size="8">
+                  ー
+                  <input type="text" value="" id="zip2" name="zip2" style="ime-mode: disabled" class="validate[required,custom[number],minSize[4],maxSize[4]]" size="8" onKeyUp="AjaxZip2.zip2addr('zip1','pref','addr','zip2');">
+     
+                  </span>
+                  <ul class="caution">
+                    <li class="txt-red">※必須内に住所名が収まりきらない場合は[追加]の入力欄をご利用ください。</li>
+                  </ul></td>
+              </tr>
+              <tr class="sp-tr">
+                <th>住所 <span class="formRequired">必須</span></th>
+                <td class="form_box4"><div>
+                    <p class="mb20">都道府県 <span class="txt-area">
+                      <input type="text" value="" id="pref" name="pref" class="validate[required]" size="40">
+                      </span> </p>
+                    <p class="mb20">市町村名 <span class="txt-area">
+                      <input type="text" value="" id="addr" name="addr" class="validate[required,maxSize[30]]" size="40">
+                      </span> <br>
+                      <span>例：生野区　※30文字以内</span> </p>
+                    <p class="mb20">丁目・番地 <span class="txt-area">
+                      <input type="text" value="" id="addr2" name="addr2" class="validate[required,maxSize[30]]" size="40">
+                      </span> <br>
+                      <span>※30文字以内</span> </p>
+                    <div>[追加] <span class="txt-area">
+                      <input type="text" value="" id="addr3" name="addr3" class="validate[optional,maxSize[30]]" size="40">
+                      </span>
+                      <ul class="caution">
+                        <li>マンション名・会社名・収まらない情報等</li>
+                        <li>※各30文字以内</li>
+                      </ul>
+                    </div>
+                    <ul class="caution">
+                      <li class="txt-red">※マンション名は省略せずにご入力ください。</li>
+                    </ul>
+                  </div></td>
+              </tr>
+              <tr class="sp-tr">
+                <th>電話番号 <span class="formRequired">必須</span></th>
+                <td class="form_box4"><div> <span class="txt-area">
+                    <input type="text" value="" style="ime-mode: disabled" class="validate[required,custom[phone],maxSize[14]]" id="tel" name="tel">
+                    </span>
+                    <ul class="caution">
+                      <li>※固定電話か携帯電話の番号をご入力ください。</li>
+                      <li>※半角数字</li>
+                    </ul>
+                  </div></td>
+              </tr>
+              <tr class="sp-tr">
+                <th>メールアドレス <span class="formRequired">必須</span></th>
+                <td class="form_box4"><span class="txt-area">
+                  <input type="text" value="" id="email" name="email" style="ime-mode: disabled" class="validate[required,custom[email]]" size="50">
+                  </span>
+                  <div class="mb20">
+                    <ul class="caution">
+                      <li>※半角英数字</li>
+                    </ul>
+                  </div>
+                  <ul class="caution">
+                    <li>※確認のため、もう一度ご入力してください。</li>
+                  </ul>
+                  <p class="txt-area">
+                    <input type="text" value="" id="email_comf" name="email_comf" class="validate[required,equals[email]]" size="50">
+                  </p></td>
+              </tr>
+              <tr>
+                <th>Ｅメールによるお知らせ<br>
+                  </th>
+                <td class="form_box4"><div>
+                    <p>
+                      <input type="checkbox" name="qr" value="1" checked="checked">
+                      受け取る </p>
+                    <p>オンライン家庭教師　東大ゼミに関する情報をお届けします。</p>
+                    <ul class="caution">
+                      <li class="txt-red">※無料モニターお申込みのお客様には講読をお願いしております。 </li>
+                    </ul>
+                  </div></td>
+              </tr>
+              <tr>
+                <th>機材（プレゼント） <span class="formRequired">必須</span><br>
+                  （WEBカメラ）</th>
+                <td class="form_box4"><p>
+                    <input type="radio" name="pr" id="pr" class="validate[required]" value="必要" checked="checked">
+                    必要
+                    <input type="radio" name="pr" id="pr" class="validate[required]" value="持っているので不要">
+                    持っているので不要 </td>
+              </tr>
+              <tr class="inquire-txtarea">
+                <th>ご意見・ご要望</th>
+                <td><textarea rows="4" cols="37" name="msg" size="100"></textarea></td>
+              </tr>
+              <tr>
+                <th> 「オンライン家庭教師　東大ゼミ」を試してみたいと思われたきっかけをお聞かせください。<br>
+                  ※複数可 </th>
+                <td class="form_box2"><p>
+                    <input type="checkbox" name="riyu[]" value="講師が現役の東大生だから">
+                    講師が現役の東大生だから</p>
+                  <p>
+                    <input type="checkbox" name="riyu[]" value="自宅にいながら授業が受けられるから">
+                    自宅にいながら授業が受けられるから</p>
+                  <p>
+                    <input type="checkbox" name="riyu[]" value="自宅の近くに塾があまりないから">
+                    自宅の近くに塾があまりないから</p>
+                  <p>
+                    <input type="checkbox" name="riyu[]" value="夜道の帰宅がずっと不安だったから">
+                    夜道の帰宅がずっと不安だったから</p>
+                  <p>
+                    <input type="checkbox" name="riyu[]" value="子供の授業中の様子を自宅で確認できるから">
+                    子供の授業中の様子を自宅で確認できるから</p>
+                  <p>
+                    <input type="checkbox" name="riyu[]" value="その他　自由回答">
+                    その他　自由回答 <span class="free-area">
+                    <input type="text" value="" id="riyu_etc" name="riyu_etc" size="30">
+                    </span> </p></td>
+              </tr>
+
+            </tbody>
+          </table>
+
+          <!--お客様情報tableはここまで--> 
+          <!--注意書きここから-->
+          <div class="contact-member_terms">
+            <ul>
+              <li>※無料モニターは、１世帯につき１回までとなります。<br>お申込み頂いても、過去にお届けしていることが確認出来た場合にはお送りすることが出来かねます。<br>ご兄弟がおられるご家庭も無料モニターは１世帯１回とさせていただきます。<br>
+                何卒、ご理解の程、宜しくお願いいたします。</li>
+              <li>※東大ゼミが使用している「オンライン受講システム」は<span>Mac非対応ですので、パソコンをMacしかお持ちでない方は、受講することができません。</span><br>お申込み頂いても、過去にお届けしていることが確認出来た場合にはお送りすることが出来かねます。<br>
+                ご兄弟がおられるご家庭も無料モニターは１世帯１回とさせていただきます。<br>
+                何卒、ご理解の程、宜しくお願いいたします。</li>
+              <li>※お申し込み後、約1週間でお届けいたします</li>
+              <li>※土日祝日やお盆年末年始をはさむ場合は、到着が遅れる場合がございます。予めご了承ください。</li>
+              <li>※プレゼントのWEBカメラ・ヘッドセットの在庫が切れる場合がございます。その際は、お届けが１週間以上いただく場合がございます。<br>
+                その際は、必ずお届け予定日をご連絡させていただきます。</li>
+            </ul>
+          </div>
+          <!--注意書きここまで-->
+
+          <table class="m-b20">
+            <tbody>
+              <tr class="inquire-txtarea">
+                <th>個人情報保護の方針</th>
+                <td>
+                  <div>
+                    <p class="mb20"> <span class="formRequired" style="float:none;">必須</span>
+                      <input type="checkbox" class="validate[required]" name="q1" id="q1" value="">
+                      個人情報保護方針に同意する</p>
+                    <p> <span class="formRequired" style="float:none;">必須</span>
+                      <input type="checkbox" class="validate[required]" name="q2" id="q2" value="">
+                      上記の注意書きの内容をしっかり理解した</p>
+                  </div></td>
+              </tr>
+            </tbody>
+          </table>
+
+          
+          <div class="box-contact-confirm">
+            <input class="btn-sub-conf" id="submit" type="submit" value="未入力の項目があります">
+          </div>
+        </form>
+      </article>
+    </main>
+  </section>
+  <!-- /メインカラムはここまで --> 
+  <!-- フッターはここから -->
+<!-- フッターはここから -->
+<footer role="contentinfo">
+<article class="footer-in">
+<section>
+<p class="txt-footer01">オンライン家庭教師　東大生ゼミ</p>
+<ul class="link-footer">
+<li><a href="../information.html">個人情報の保護について</a></li>
+<li><a href="../tokusyou.html">特定商取引法に基づく表記</a></li>
+</ul>
+</section>
+</article>
+</footer>
+</div>
+<!-- /wrap -->
+</body>
+</html>

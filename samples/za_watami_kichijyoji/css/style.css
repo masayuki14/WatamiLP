@@ -1,0 +1,208 @@
+@charset "UTF-8";
+body {
+	color:#000;
+	font-family: Meiryo, "メイリオ", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "小塚明朝 Pro M", "MS PGothic", sans-serif;
+	font-size: 14px;
+	line-height: 160%;
+	background-image: url(../img/bg.png);
+	background-repeat: repeat;
+}
+pre, code {
+	font-family:Meiryo, "メイリオ", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+a:link, a:visited {
+	color:#333333;
+	text-decoration:none;
+}
+a:hover {
+	text-decoration:underline;
+	color:#333333;
+}
+.moz a:hover img {
+	filter: alpha(Opacity=80);/*IE透過設定*/
+	-moz-opacity:0.8;/*firefox透過設定*/
+	opacity:0.8;
+	background-color:#FFF;
+}
+.txt01{font-size:14px; line-height:140%;}
+
+/* 画面から画像がはみ出ないようにする */
+img {
+	max-width:100%;
+	width :auto; /* IE8のみ */
+	height:auto;
+	vertical-align:bottom;
+}
+.txt-img{
+	/zoom:1;
+	overflow:hidden;
+}
+.img-l{float:left; margin-right:20px;}
+.img-r{float:right; margin-left:20px;}
+.txt-content{
+	/zoom:1;
+	overflow:hidden;
+}
+.border-gray{
+	border:solid 12px #DDDDDD;
+}
+#wrap{
+	margin:auto;
+	overflow:hidden;
+	position:relative;
+}
+h1{
+	font-size:12px!important;
+	font-weight:normal;
+	color:#FFFFFF;
+	line-height:120%;
+}
+h2{text-align:center;}
+h3{
+	background-color:#745E47;
+	color:#FFF;
+	font-size:20px;
+	font-weight:bold;
+	line-height:160%;
+	padding:3px 10px!important;
+}
+h4{
+	font-size:28px;
+	line-height:120%;
+	margin-bottom:10px;
+}
+.pd20{padding:20px;}
+/* header */
+#header{
+	background-color:#000;
+	width:100%;
+	overflow:hidden;
+	margin-bottom:10px;
+}
+.header-in{
+	width:960px;
+	overflow:hidden;
+	margin:auto;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+.header-in ul li{
+	float:left;
+	list-style:none;
+}
+.header-in ul li:nth-child(2){
+	font-size:18px;
+	color:#FFF;
+	margin:0 20px 0 0;
+	padding-top:50px;
+	line-height:140%;
+}
+.h-tel{
+	background-color:#FFF;
+	padding:10px 5px;	
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	behavior: url(/pie/PIE.htc);
+	border:slid 1px #E7DDCB;
+	margin-top:20px;
+}
+.h-tel p{float:left;}
+
+/* container */
+.w-860{
+	width:860px;
+	background-color:#FFF;
+	margin:auto auto 20px auto;
+	overflow:hidden;
+	position:relative;
+}
+.w-820{
+	width:778px;
+	border:solid 1px #745E47;
+	margin:0 auto 30px auto;
+}
+.price01{
+	font-size:46px;
+	color:#FF0000;
+	font-weight:bold;
+	line-height:100%;
+	margin-bottom:10px;
+}
+.price01 span{font-size:34px;}
+.price02{font-size:20px; margin-bottom:25px;}
+
+/* イチオシメニュー */
+.clickarea {overflow: hidden; cursor: pointer;}
+.clickarea:hover {background:#E1DBA4;}
+.menu-box{max-width:860px; overflow:hidden; margin:0 auto 30px auto; background-color:#FFF;}
+#menu01, #menu02, #menu03{
+	margin:0 auto;
+	overflow:hidden;
+	background-color:#FFF;
+	padding-right:20px;
+}
+#menu01 li, #menu02 li, #menu03 li{list-style:none;}
+#menu01 a{text-decoration:none;}
+#menu:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+.item{
+  margin:20px 0 20px 20px;
+  width:240px;
+  padding:25px 10px;
+  background:#EDE9C7;
+  float: left;
+}
+.item img {width:88%; margin-left:auto; margin-right:auto;}
+.item img:hover {opacity: 0.8;}
+.item-n{font-size:16px; font-weight:bold; line-height:140%; margin:10px 0 15px 0;}
+.price03{right:10px; position:absolute; bottom:10px; font-size:16px;}
+
+/* 店舗案内 */
+.shop-info{
+	overflow:hidden;
+	color:#FFF;
+	font-size:16px;
+	line-height:140%;
+}
+.shop-info dt{
+	float:left;
+	padding:10px;
+}
+.shop-info dd{
+	border-bottom:dotted 1px #CCCCCC;
+	padding:10px 10px 10px 105px;
+}
+.shop-info dd:last-child{
+	border-bottom:none;
+}
+.pd{padding:30px 20px 20px 20px;}
+#map_canvas{width:410px; height:330px;}
+.gm-style .gm-style-iw{line-height:140%!important;}
+.copy{
+	font-size:12px;
+	color:#FFF;
+	text-align:center;
+}
+#page-top {
+	position: fixed;
+	background-image: url(../img/page-top.png);
+	background-repeat: no-repeat;
+	bottom: 20px;
+	right: 20px;
+	text-indent:-9999px;
+	z-index:999;
+	filter: alpha(Opacity=70);/*IE透過設定*/
+	-moz-opacity:0.7;/*firefox透過設定*/
+	opacity:0.7;
+}
+#page-top a {
+	display:block;
+	height:60px;
+	width:60px;
+}

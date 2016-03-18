@@ -1,0 +1,282 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	color:#000;
+	font-family: Meiryo, "メイリオ", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "小塚明朝 Pro M", "MS PGothic", sans-serif;
+	font-size: 14px;
+	line-height: 160%;
+}
+pre, code {
+	font-family:Meiryo, "メイリオ", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+#▼特定商取引法に基づく表記ページ{}
+
+.tokusyou-content{
+	overflow:hidden;
+}
+.tokusyou-content h1{
+	margin-bottom:40px;
+	text-align:center;
+	line-height:1.2;
+	font-size:24px;
+	font-weight:bold;
+}
+.tokusyou-content dl{
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:50px;
+	overflow:hidden;
+	width:720px;
+	font-size:14px;
+}
+.tokusyou-content dt{
+	float:left;
+	margin-right:30px;
+	padding-top:14px;
+	padding-bottom:14px;
+	width:160px;
+	border-top:dotted 1px #ccc;
+	font-weight:bold;
+}
+.tokusyou-content dt:first-child{
+	border-top:none;
+}
+.tokusyou-content dd{
+	padding-top:14px;
+	padding-bottom:14px;
+	padding-left:190px;
+	border-top:dotted 1px #ccc;
+}
+.tokusyou-content dd:nth-child(2){
+	border-top:none;
+}
+
+#▼お申込内容確認{}
+/* 共通 */
+.align-c{text-align:center;}
+.w-800{
+	width:800px;
+	overflow:hidden;
+	margin:auto;
+}
+
+
+.app-flow{
+	overflow:hidden;
+	margin-bottom:50px;
+}
+.app-flow li{
+	float:left;
+	margin-right:6px;
+}
+.app-flow li:last-child{margin-right:0;}
+/* お申し込み内容 */
+.app-txt{
+	font-size:16px;
+	line-height:140%;
+	margin-bottom:10px;
+}
+.app-tit{
+	color:#FFF;
+	font-weight:bold;
+	background-color:#49BCE4;
+	line-height:140%;
+	padding:5px 20px;
+	margin-bottom:20px;
+	font-size:18px;
+}
+.app-check{
+	border-collapse:collapse;
+	width:100%;
+	margin-bottom:50px;
+}
+.app-check thead th{
+	border:solid 1px #CCC;
+	background-color:#EEE;
+	font-weight:normal;
+	text-align:center;
+	font-size:16px;
+	padding:10px;
+	vertical-align:top;
+}
+.app-check tbody th{
+	border:solid 1px #CCC;
+	font-weight:normal;
+	text-align:left;
+	font-size:16px;
+	padding:10px;
+	vertical-align:top;
+}
+.app-check tbody td{
+	border:solid 1px #CCC;
+	font-weight:normal;
+	text-align:right;
+	font-size:16px;
+	padding:10px;
+	vertical-align:top;
+}
+.app-txt-b{
+	border:solid 1px #CCC;
+	text-align:center;
+	font-size:18px;
+	padding:160px 0;
+	margin-bottom:30px;
+}
+.app-monita{
+	width:100%;
+	background-color:#FFCC00;
+	text-align:center;
+	padding:5px 0 0 0;
+	margin-bottom:50px;
+}
+/* 定期テストコース */
+.app-course01{
+	overflow:hidden;
+	background-color:#E5407B;
+	padding:15px 10px 10px 10px;
+	width:697px;
+	margin:auto auto 40px auto;
+	border-radius: 10px;        /* CSS3草案 */  
+    -webkit-border-radius: 10px;    /* Safari,Google Chrome用 */  
+    -moz-border-radius: 10px;   /* Firefox用 */  
+}
+.app-course-detail{
+	overflow:hidden;
+	background-color:#FFF;
+	padding:10px;
+	margin-top:15px;
+}
+.app-course-detail ul li{
+	margin-bottom:20px;
+	text-align:center;
+}
+.app-course-price{
+	margin-bottom:0!important;
+	margin-top:-20px;
+	margin-left:10px;
+	margin-right:10px;
+}
+/* センター対策コース */
+.app-course02{
+	overflow:hidden;
+	background-color:#F5661A;
+	padding:15px 10px 10px 10px;
+	width:697px;
+	margin:auto auto 40px auto;
+	border-radius: 10px;        /* CSS3草案 */  
+    -webkit-border-radius: 10px;    /* Safari,Google Chrome用 */  
+    -moz-border-radius: 10px;   /* Firefox用 */  
+}
+/* 医・歯・薬対策コース */
+.app-course03{
+	overflow:hidden;
+	background-color:#0056A8;
+	padding:15px 10px 10px 10px;
+	width:697px;
+	margin:auto auto 40px auto;
+	border-radius: 10px;        /* CSS3草案 */  
+    -webkit-border-radius: 10px;    /* Safari,Google Chrome用 */  
+    -moz-border-radius: 10px;   /* Firefox用 */  
+}
+#btn-teki01{
+	margin-bottom:10px;
+	border: 0 none;
+    min-width: 338px;
+    min-height: 567px;
+	background-image:url(../img/page/txt_teki01.jpg);
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:center;
+	background-color:#fff;
+	cursor:pointer;
+}
+
+#btn-jyuken01{
+	margin-bottom:10px;
+	border: 0 none;
+    min-width: 338px;
+    min-height: 567px;
+	background-image:url(../img/page/txt_jyuken01.jpg);
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:center;
+	background-color:#fff;
+	cursor:pointer;
+}
+
+#btn-teki02{
+	margin-bottom:10px;
+	border: 0 none;
+    min-width: 289px;
+    min-height: 567px;
+	background-image:url(../img/page/txt_teki02.jpg);
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:center;
+	background-color:#fff;
+	cursor:pointer;
+}
+	
+
+#▼お申込完了{}
+.com-tit{
+	font-size:34px;
+	color:#49BCE4;
+	text-align:center;
+	margin-bottom:10px;
+}
+.com-txt01{
+	font-size:16px;
+	text-align:center;
+	margin-bottom:30px;
+}
+.com-txt02{
+	color:#FFFF00;
+	background-color:#49BCE4;
+	text-align:center;
+	font-size:24px;
+	line-height:140%;
+	padding:10px 0;
+}
+.com-mail{
+	overflow:hidden;
+	background-color:#EEE;
+	margin-bottom:50px;
+}
+.com-mail li{
+	text-align:center;
+	font-size:14px;
+	line-height:160%;
+	margin-bottom:10px;
+}
+.com-mail li:nth-child(2){
+	font-size:24px;
+	color:#49BCE4;
+}
+.com-mail li:last-child{margin-bottom:20px;}
+.social-btn{
+	overflow:hidden;
+	width:360px;
+	margin:auto auto 30px auto;
+}
+.social-btn li{
+	float:left;
+	margin-left:20px;
+}
+.social-btn li:first-child{margin-left:0;}
+.social-btn02{
+	overflow:hidden;
+	width:600px;
+	margin:auto auto 30px auto;
+}
+.social-btn02 li{
+	float:left;
+	margin-left:20px;
+}
+.social-btn02 li:first-child{margin-left:0;}
+.social-url{
+	width:778px;
+	border:solid 1px #CCC;
+	padding:10px;
+	margin-bottom:30px;
+}

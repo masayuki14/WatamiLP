@@ -1,0 +1,87 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	color:#000;
+	font-family: Meiryo, "メイリオ", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "小塚明朝 Pro M", "MS PGothic", sans-serif;
+	font-size: 14px;
+	line-height: 160%;
+}
+pre, code {
+	font-family:Meiryo, "メイリオ", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+#▼特定商取引法に基づく表記ページ{}
+
+.tokusyou-content{
+	overflow:hidden;
+}
+.tokusyou-content h1{
+	margin-bottom:40px;
+	text-align:center;
+	line-height:1.2;
+	font-size:24px;
+	font-weight:bold;
+}
+.tokusyou-content dl{
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:50px;
+	overflow:hidden;
+	width:720px;
+	font-size:14px;
+}
+.tokusyou-content dt{
+	float:left;
+	margin-right:30px;
+	padding-top:14px;
+	padding-bottom:14px;
+	width:160px;
+	border-top:dotted 1px #ccc;
+	font-weight:bold;
+}
+.tokusyou-content dt:first-child{
+	border-top:none;
+}
+.tokusyou-content dd{
+	padding-top:14px;
+	padding-bottom:14px;
+	padding-left:190px;
+	border-top:dotted 1px #ccc;
+}
+.tokusyou-content dd:nth-child(2){
+	border-top:none;
+}
+
+#▼個人情報保護方針{}
+.kozinzyouhou-content h1 {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 40px;
+    text-align: center;
+	 
+}.kozinzyouhou-content > p {
+    width: 720px;
+	margin:0 auto;
+	margin-bottom:20px;
+}
+.kozinzyouhou-content dl {
+  font-size: 14px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  width: 720px;
+}
+.kozinzyouhou-content dt{
+	font-weight:bold;
+}
+.kozinzyouhou-content dd{
+  margin-bottom: 14px;
+  margin-left: 28px;
+}
+.kozinzyouhou-content ul {
+  margin-left: 2em;
+}
+.kozinzyouhou-content li {
+  text-indent: -13px;
+}

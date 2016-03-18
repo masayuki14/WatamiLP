@@ -1,0 +1,121 @@
+@media (min-width:768px) {
+.pc-none {display:none;}
+
+
+}
+@media (max-width:768px) {
+.menu-box{max-width:96%; overflow:hidden; margin:0 auto 30px auto; background-color:#FFF;}
+.sp-none{display:none;}
+h3{
+	background-color:#745E47;
+	color:#FFF;
+	font-size:16px;
+	font-weight:bold;
+	line-height:140%;
+	padding:2%!important;
+	margin:0!important;
+}
+h4{
+	font-size:16px;
+	line-height:120%;
+	margin-bottom:10px;
+}
+/* header */
+.header-in{
+	width:96%;
+	overflow:hidden;
+	margin:auto;
+	padding-top:10px;
+}
+.header-in ul li:nth-child(2){
+	font-size:14px;
+	color:#FFF;
+	margin:0 0 0 8px;
+	padding-top:30px;
+	line-height:140%;
+}
+.h-tel-sp{width:14%; float:right!important;}
+.h-tel-sp img{
+	width:70%;
+	margin-top:35px;
+	text-align:right!important;
+}
+/* container */
+.w-860{width:96%; overflow:hidden; margin:auto auto 4% auto;}
+.w-820{
+	width:90%;
+	margin:0 auto 4% auto!important;
+	border:solid 1px #745E47!important;
+}
+.price01{
+	font-size:30px;
+	color:#FF0000;
+	font-weight:bold;
+	line-height:100%;
+	margin-bottom:10px;
+}
+.price01 img{width:50%;}
+.price01 span{font-size:24px;}
+.price02{font-size:16px; margin-bottom:2%;}
+.item img {width:88%; margin-left:6%;}
+.price03{right:10px; position:absolute; bottom:10px; font-size:16px;}
+}
+@media (max-width:681px) {
+
+#map_canvas{width:100%; height:240px;}
+.br-sp { display:none;}
+}
+@media (max-width:600px) {	
+.txt-img{/zoom:1; overflow:hidden;}
+.img-l{float:none; text-align:center; margin-bottom:10px; margin-left:0;}
+.img-r{float:none; text-align:center; margin-bottom:10px; margin-left:0;}
+.txt-content{overflow:hidden;}
+.border-gray{border:none;}
+
+.price01 img{width:30%;}
+.g-map{width:96%!important; overflow:hidden; margin:auto;}
+	
+}
+@media (max-width:400px) {
+/* header */
+.header-in{
+	width:96%;
+	overflow:hidden;
+	margin:auto;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+.header-in ul li:nth-child(2){
+	font-size:12px;
+	color:#FFF;
+	padding-top:50px;
+}
+.h-tel-sp{width:14%; margin:auto!important;}
+.h-tel-sp img{
+	margin-top:40px;
+	text-align:center!important;
+}
+}
+@media (max-width:370px) {
+/* header */
+.header-in{
+	width:96%;
+	overflow:hidden;
+	margin:auto;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+.header-in ul li{float:left;}
+.logo{width:30%;}
+.header-in ul li:nth-child(2){
+	font-size:12px;
+	color:#FFF;
+	padding-top:30px!important;
+	line-height:140%;
+}
+.h-tel-sp{width:14%; margin:auto!important;}
+.h-tel-sp img{
+	margin-top:40px;
+	text-align:center!important;
+}
+}

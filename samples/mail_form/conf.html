@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+<html lang="ja">
+<head>
+<!-- Basic Page Needs
+================================================== -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="keywords" content="高校生,高校受験,個別指導,塾,東大,勉強方法,家庭教師">
+<meta name="description" content="東大生の家庭教師による高校生のためのオンライン個別指導。定期テスト対策や志望校合格のための徹底フォロー">
+<title>お申し込み内容確認 | オンライン家庭教師東大生ゼミ</title>
+<link href="css/style_form.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/page_form.css" rel="stylesheet">
+<link href="css/responsive_form.css" rel="stylesheet">
+<link href="css/responsive.css" rel="stylesheet">
+<link href="css/responsive02.css" rel="stylesheet">
+<link href="css/cmn.css" rel="stylesheet">
+<link rel="stylesheet" href="css/reset.css">
+<link rel="icon" href="img/cmn/favicon.ico" type="image/gif">
+
+<!-- JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<!-- ボタンアクション -->
+<link rel="stylesheet" href="http://anijs.github.io/lib/anicollection/anicollection.css">
+</head>
+<body id="top" onload="load()">
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MN6SKH"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MN6SKH');</script>
+<!-- End Google Tag Manager -->
+<div id="wrap"> 
+	<!-- ヘッダーはここから -->
+	<header id="header">
+		<section class="header-in">
+			<p class="logo"><a href="../index.html"><img src="img/cmn/logo_header.png" alt="オンライン家庭教師東大生ゼミ"></a></p>
+			<p class="txt-header01">全国すべての高校生に個別授業が可能になりました。</p>
+			<p class="btn-header01"><a href="http://school.soba-education.com/"><img src="img/cmn/btn_header01.jpg" alt="会員様専用ページ"></a></p>
+		</section>
+	</header>
+	<!-- /ヘッダーはここまで -->
+	<section class="primary02"> 
+		<!-- メインカラムはここから -->
+		<main role="main"> 
+			<!-- オンライン家庭教師　東大ゼミここから -->
+			<section class="tokusyou-content">
+				<h1>オンライン家庭教師　東大ゼミ</h1>
+				<!-- 申込フォロー -->
+				<section class="w-800">
+					<section class="app-flow sp-none">
+						<ul>
+							<li><img src="img/page/pic_app01.jpg" alt="お申込内容入力"></li>
+							<li><img src="img/page/ico_arr.gif" alt="矢印"></li>
+							<li><img src="img/page/pic_app02.jpg" alt="お申込内容確認"></li>
+							<li><img src="img/page/ico_arr.gif" alt="矢印"></li>
+							<li><img src="img/page/pic_app03.jpg" alt="お申込完了"></li>
+						</ul>
+					</section>
+					<section class="app-flow pc-none w-sp-100"><img src="img/page/pic_flow02.jpg" alt="お申し込み内容確認"></section>
+					<!-- /申込フォロー --> 
+					<!-- お申込み内容 -->
+					<p class="app-txt">入力内容に間違いなければページ下のお申込みボタンを押して確定してください。</p>
+					<p class="app-tit">お申込み内容</p>
+					<table class="app-check">
+						<thead>
+							<tr>
+								<th>コース名</th>
+								<th>単価(税別)</th>
+								<th>数量</th>
+								<th>金額</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th>無料モニター50分</th>
+								<td>0円</td>
+								<td>1</td>
+								<td>0円</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>0円</td>
+								<td>1</td>
+								<td>0円</td>
+							</tr>
+							<tr>
+								<td colspan="2">小計</td>
+								<td colspan="2">0円</td>
+							</tr>
+							<tr>
+								<td colspan="2">消費税</td>
+								<td colspan="2">0円</td>
+							</tr>
+							<tr>
+								<td colspan="2">送料</td>
+								<td colspan="2">0円</td>
+							</tr>
+							<tr>
+								<td colspan="2">割引額</td>
+								<td colspan="2">0円</td>
+							</tr>
+							<tr>
+								<td colspan="2">合計</td>
+								<td colspan="2">0円</td>
+							</tr>
+						</tbody>
+					</table>
+					<!-- /お申込み内容 --> 
+					<!-- お客様情報 -->
+					<p class="app-tit">お客様情報</p>
+					<form  class="inquire" method="POST" action="./send.php" id="mail_form">
+						<!--お客様情報登録tableはここから-->
+						
+						<table class="m-b20">
+							<tbody>
+								<tr class="sp-tr">
+									<th>生徒様　お名前 </th>
+									<td class="form_box4"><div><span class="txt-area">姓 <?php echo htmlspecialchars($_POST['last_name']); ?>
+											<input type="hidden" name="last_name" value="<?php echo htmlspecialchars($_POST['last_name']); ?>">
+											</span> <span class="txt-area">名
+											<input type="hidden" name="first_name" value="<?php echo htmlspecialchars($_POST['first_name']); ?>">
+											<?php echo htmlspecialchars($_POST['first_name']); ?> </span> </div></td>
+								</tr>
+								<tr class="sp-tr">
+									<th>生徒様　お名前（フリガナ） </th>
+									<td class="form_box4"><div> <span class="txt-area">セイ <?php echo htmlspecialchars($_POST['last_name_kana']); ?>
+											<input type="hidden" name="last_name_kana" value="<?php echo htmlspecialchars($_POST['last_name_kana']); ?>">
+											</span> <span class="txt-area">メイ <?php echo htmlspecialchars($_POST['first_name_kana']); ?>
+											<input type="hidden" name="first_name_kana" value="<?php echo htmlspecialchars($_POST['first_name_kana']); ?>">
+											</span> </div></td>
+								</tr>
+								<tr>
+									<th>生徒様　生年月日</th>
+									<td class="form_box4"><div class="form-day"><span class="txt-area"> <?php echo htmlspecialchars($_POST['year']); ?>
+											<input type="hidden" name="year" value="<?php echo htmlspecialchars($_POST['year']); ?>">
+											年 </span> <span class="txt-area"> <?php echo htmlspecialchars($_POST['month']); ?>
+											<input type="hidden" name="month" value="<?php echo htmlspecialchars($_POST['month']); ?>">
+											月 </span> <span class="txt-area"> <?php echo htmlspecialchars($_POST['day']); ?>
+											<input type="hidden" name="day" value="<?php echo htmlspecialchars($_POST['day']); ?>">
+											日 </span> </div></td>
+								</tr>
+								<tr class="sp-tr">
+									<th>保護者様　お名前</th>
+									<td class="form_box4"><div><span class="txt-area">姓 <?php echo htmlspecialchars($_POST['guard_last_name']); ?>
+											<input type="hidden" name="guard_last_name" value="<?php echo htmlspecialchars($_POST['guard_last_name']); ?>">
+											</span> <span class="txt-area">名 <?php echo htmlspecialchars($_POST['guard_first_name']); ?>
+											<input type="hidden" name="guard_first_name" value="<?php echo htmlspecialchars($_POST['guard_first_name']); ?>">
+											</span> </div></td>
+								</tr>
+								<tr class="sp-tr">
+									<th>保護者様　お名前（フリガナ）</th>
+									<td class="form_box4"><div> <span class="txt-area">セイ <?php echo htmlspecialchars($_POST['guard_last_name_kana']); ?>
+											<input type="hidden" name="guard_last_name_kana" value="<?php echo htmlspecialchars($_POST['guard_last_name_kana']); ?>">
+											</span> <span class="txt-area">メイ <?php echo htmlspecialchars($_POST['guard_first_name_kana']); ?>
+											<input type="hidden" name="guard_first_name_kana" value="<?php echo htmlspecialchars($_POST['guard_first_name_kana']); ?>">
+											</span> </div></td>
+								</tr>
+								<tr class="sp-tr">
+									<th>続柄</th>
+									<td class="form_box4"><div><span> <?php echo htmlspecialchars($_POST['relation']); ?>
+											<input type="hidden" name="relation" value="<?php echo htmlspecialchars($_POST['relation']); ?>">
+											</span> </div></td>
+								</tr>
+								<tr>
+									<th>郵便番号</th>
+									<td class="form_box4"><span class="postal-txt"> <?php echo htmlspecialchars($_POST['zip1']); ?>
+										<input type="hidden" name="zip1" value="<?php echo htmlspecialchars($_POST['zip1']); ?>">
+										ー <?php echo htmlspecialchars($_POST['zip2']); ?>
+										<input type="hidden" name="zip2" value="<?php echo htmlspecialchars($_POST['zip2']); ?>">
+										</span></td>
+								</tr>
+								<tr class="sp-tr">
+									<th>住所 </th>
+									<td class="form_box4"><div>
+											<p class="mb20">都道府県 <span class="txt-area"> <?php echo htmlspecialchars($_POST['pref']); ?>
+												<input type="hidden" name="pref" value="<?php echo htmlspecialchars($_POST['pref']); ?>">
+												</span> </p>
+											<p class="mb20">市町村名 <span class="txt-area"> <?php echo htmlspecialchars($_POST['addr']); ?>
+												<input type="hidden" name="addr" value="<?php echo htmlspecialchars($_POST['addr']); ?>">
+												</span> <br>
+											<p class="mb20">丁目・番地 <span class="txt-area"> <?php echo htmlspecialchars($_POST['addr2']); ?>
+												<input type="hidden" name="addr2" value="<?php echo htmlspecialchars($_POST['addr2']); ?>">
+												</span> <br>
+											<div>[追加] <span class="txt-area"> <?php echo htmlspecialchars($_POST['addr3']); ?>
+												<input type="hidden" name="addr3" value="<?php echo htmlspecialchars($_POST['addr3']); ?>">
+												</span> </div>
+										</div></td>
+								</tr>
+								<tr>
+									<th>電話番号</th>
+									<td class="form_box4"><div> <span class="txt-area"> <?php echo htmlspecialchars($_POST['tel']); ?>
+											<input type="hidden" name="tel" value="<?php echo htmlspecialchars($_POST['tel']); ?>">
+											</span> </div></td>
+								</tr>
+								<tr class="sp-tr">
+									<th>メールアドレス</th>
+									<td class="form_box4"><span class="txt-area"> <?php echo htmlspecialchars($_POST['email']); ?>
+										<input type="hidden" name="email" value="<?php echo htmlspecialchars($_POST['email']); ?>">
+										</span></td>
+								</tr>
+								<tr>
+									<th>Ｅメールによるお知らせ</th>
+										<td class="form_box4">
+										<div>
+											<p>
+												<?php if ($_POST['qr'] == 1) {  ?>
+												受け取る
+												<?php } else {  ?>
+												受け取らない
+												<?php }  ?>
+												<input type="hidden" name="qr" value="<?php echo htmlspecialchars($_POST['qr']); ?>">
+											</p>
+										</div>
+										</td>
+								</tr>
+								<tr>
+									<th>機材（プレゼント）（WEBカメラ）</th>
+									<td class="form_box4"><span class="txt-area"> <?php echo htmlspecialchars($_POST['pr']); ?>
+											<input type="hidden" name="pr" value="<?php echo htmlspecialchars($_POST['pr']); ?>"></span>
+									</td>
+								</tr>
+								<tr class="inquire-txtarea">
+									<th>ご意見・ご要望</th>
+									<td class="form_box4"><span class="txt-area"><?php echo nl2br(htmlspecialchars($_POST['msg'])); ?>
+										<input type="hidden" name="msg" value="<?php echo htmlspecialchars($_POST['msg']); ?>"></span></td>
+								</tr>
+								<tr>
+									<th> 「オンライン家庭教師　東大ゼミ」を試してみたいと思われたきっかけをお聞かせください。<br>
+										※複数可 </th>
+									<td class="form_box2"><p class="mb20">
+											<?php if (isset($_POST['riyu']) && is_array($_POST['riyu'])) { ?>
+											<?php foreach ($_POST['riyu'] as $value) { ?>
+											<?php echo $value; ?><br />
+											<input type="hidden" name="riyu[]" value="<?php echo $value; ?>">
+											<?php } ?>
+											<?php } else { ?>
+											<br />
+											<?php }  ?>
+											<?php echo htmlspecialchars($_POST['riyu_etc']); ?>
+											<input type="hidden" name="riyu_etc" value="<?php echo htmlspecialchars($_POST['riyu_etc']); ?>">
+										</p></td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="box-contact-confirm box-conf">
+							<input class="btn-sub-conf" type="button" onClick="history.back(); return false;" value="戻る">
+						</div>
+						<!-- /お客様情報 -->
+						<p class="app-monita"><img src="img/page/txt_app01.png" alt="モニターをお申込みいただく前に必ず確認ください。"></p>
+						<!-- 定期テストコース -->
+						<section class="app-course01">
+							<p class="align-c w-sp-100"><img src="img/page/txt_app02.png" alt="定期テストコース"></p>
+							<section class="app-course-detail w-sp-100">
+								<ul>
+									<li><img src="img/page/txt_app03.jpg" alt="特別入会金価格10,500円(税込)"></li>
+									<li><img src="img/page/txt_app04.jpg" alt="さらにペンタブレットもプレゼント"></li>
+									<li><img src="img/page/txt_app05.jpg" alt="本当に学びたい！"></li>
+								</ul>
+								<figure class="txt-img app-course-price">
+									<section class="img-r">
+										<img src="img/page/txt_teki01.jpg" alt="定期テストコース">
+										<!-- <input type="submit" value="" id="btn-teki01"> -->
+									</section>
+									<figcaption class="txt-contents">
+										<input type="submit" value="" id="btn-teki02">
+									</figcaption>
+								</figure>
+							</section>
+						</section>
+						<!-- /定期テストコース --> 
+						
+						<!-- センター対策コース -->
+						<section class="app-course02">
+							<p class="align-c w-sp-100"><img src="img/page/txt_app09.png" alt="センター対策コース"></p>
+							<section class="app-course-detail w-sp-100">
+								<ul>
+									<li><img src="img/page/txt_app10.jpg" alt="特別入会金価格10,500円(税込)"></li>
+									<li><img src="img/page/txt_app11.jpg" alt="さらにペンタブレットもプレゼント"></li>
+									<li><img src="img/page/txt_jyuken07.jpg" alt="本当に学びたい！"></li>
+								</ul>
+								<figure class="txt-img app-course-price">
+									<section class="img-r">
+										<img src="img/page/txt_jyuken01.jpg" alt="センター対策コース">
+										<!-- <input type="submit" value="" id="btn-jyuken01"> -->
+									</section>
+									<figcaption class="txt-contents btn-content01">
+										<input type="submit" value="" id="btn-teki02">
+									</figcaption>
+								</figure>
+
+							</section>
+						</section>
+						<!-- /センター対策コース -->
+                        <!-- 医・歯・薬コースコース -->
+						<section class="app-course03">
+							<p class="align-c w-sp-100"><img src="img/page/txt_other09.png" alt="医・歯・薬コースコース"></p>
+							<section class="app-course-detail w-sp-100">
+								<ul>
+									<li><img src="img/page/txt_app10.jpg" alt="特別入会金価格10,500円(税込)"></li>
+									<li><img src="img/page/txt_app11.jpg" alt="さらにペンタブレットもプレゼント"></li>
+									<li><img src="img/page/txt_other07.jpg" alt="本当に学びたい！"></li>
+								</ul>
+								<figure class="txt-img app-course-price">
+									<section class="img-r">
+										<img src="img/page/txt_other01.jpg" alt="医・歯・薬コースコース">
+										<!-- <input type="submit" value="" id="btn-jyuken01"> -->
+									</section>
+									<figcaption class="txt-contents btn-content01">
+										<input type="submit" value="" id="btn-teki02">
+									</figcaption>
+								</figure>
+
+							</section>
+						</section>
+						<!-- /医・歯・薬コースコース -->
+					</form>
+				</section>
+				<!-- /w-800 --> 
+				
+			</section>
+			<!--  /オンライン家庭教師　東大ゼミここまで --> 
+		</main>
+	</section>
+	<!-- フッターはここから -->
+	<footer role="contentinfo">
+		<article class="footer-in">
+			<section>
+				<p class="txt-footer01">オンライン家庭教師　東大生ゼミ</p>
+				<ul class="link-footer">
+					<li><a href="../information.html">個人情報の保護について</a></li>
+					<li><a href="../tokusyou.html">特定商取引法に基づく表記</a></li>
+				</ul>
+			</section>
+		</article>
+	</footer>
+</div>
+<!-- /wrap --> 
+
+<!-- ボタンアクション --> 
+<script src="http://anijs.github.io/lib/anijs/anijs-min.js"></script>
+</body>
+</html>

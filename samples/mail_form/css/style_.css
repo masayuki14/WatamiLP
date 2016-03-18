@@ -1,0 +1,238 @@
+@charset "UTF-8";
+@media screen and (min-width: 768px) {
+body {
+	color:#333333;
+	font-family: Meiryo, "メイリオ", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "小塚明朝 Pro M", "MS PGothic", sans-serif;
+	font-size: 14px;
+	line-height: 160%;
+}
+}
+@media screen and (min-width: 768px) {/*画面サイズ768pxまでに対応*/
+/*お問い合わせフォーム*/
+.table-top {
+  margin: 0 auto;
+  overflow: hidden;
+  width: 980px;
+}
+
+.inquire {
+  margin: 0 auto;
+  width: 800px;
+}
+.inquire table {
+	width: 100%;
+	margin:0 auto 30px;
+}
+.txt-red {
+	color:#CC0000;
+}
+.inquire tr {
+	border-bottom: 1px solid #CCC;
+	display: block;
+	padding: 30px 0px;
+}
+.inquire th {
+	display: block;
+	float: left;
+	margin-right: 40px;
+	text-align: left;
+	vertical-align: top;
+	width: 330px;
+}
+.inquire th, inquire tr {
+	height: 4em;
+}
+.formRequired {
+	background-color:#CC0000;
+	color: white;
+	float: right;
+	padding: 0 5px;
+}
+.form_box4 {
+	vertical-align: top;
+	width: 600px;
+}
+.form_box4 > div {
+	overflow: hidden;
+}
+.form_box4 span {
+	margin-right: 20px;
+}
+.btn-sub {
+	background-color: black;
+	background-image: url("../img/cmn/ico_arrow.png");
+	background-position: 97% 52%;
+	background-repeat: no-repeat;
+	background-size: 5% auto;
+	border: medium none;
+	color: white;
+	padding: 6px;
+	width: 162px;
+	margin-left: 20px;
+}
+
+.btn-monita01{
+	position:relative;
+    margin-left: auto;
+    margin-right: auto;	width:637px;
+	height:267px;
+	background-image:url(../img/page/btn_monita01.jpg);
+	background-repeat:no-repeat;
+}
+
+.btn-monita01 .btn-sub-conf{
+	position:absolute;
+	top:190px;
+	left:190px;
+	border: medium none;
+	border-radius: 5px;
+	color: #fff;
+	display: block;
+	font-size:18px;
+	font-weight: bold;
+	height: 60px;
+	margin: 0 auto;
+	width: 260px;
+	background-color: #2F9B2F;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#2F9B2F), to(#247724));
+	background-image: -webkit-linear-gradient(top, #2F9B2F, #247724);
+	background-image: -moz-linear-gradient(top, #2F9B2F, #247724);
+	background-image: -ms-linear-gradient(top, #2F9B2F, #247724);
+	background-image: -o-linear-gradient(top, #2F9B2F, #247724);
+	background-image: linear-gradient(to bottom, #2F9B2F, #247724);
+	filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#2F9B2F, endColorstr=#247724);
+	background-position: 93% center;
+}
+
+.btn-monita01:hover {
+    /*
+        filter: alpha(opacity=80);
+    -ms-filter: "alpha(opacity=80)";
+    */
+    -webkit-opacity: 0.8;
+       -moz-opacity: 0.8;
+        -ms-opacity: 0.8;
+         -o-opacity: 0.8;
+            opacity: 0.8;
+    cursor:pointer;
+}
+
+.contact-member_terms li {
+	list-style: outside none none;
+}
+
+.box-contact-confirm{
+	overflow: hidden;
+	margin-bottom: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	width:260px;
+}
+.btn-sub-conf {
+	background-color: #ffcc00;
+	border: medium none;
+	border-radius: 5px;
+	color: black;
+	display: block;
+	font-size:18px;
+	font-weight: bold;
+	height: 60px;
+	margin: 0 auto;
+	width: 260px;
+}
+
+.box-conf .btn-sub-conf:first-child {
+	float:left;
+	color:#fff;
+	background-color: #2F9B2F;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#2F9B2F), to(#247724));
+	background-image: -webkit-linear-gradient(top, #2F9B2F, #247724);
+	background-image: -moz-linear-gradient(top, #2F9B2F, #247724);
+	background-image: -ms-linear-gradient(top, #2F9B2F, #247724);
+	background-image: -o-linear-gradient(top, #2F9B2F, #247724);
+	background-image: linear-gradient(to bottom, #2F9B2F, #247724);
+	filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#2F9B2F, endColorstr=#247724);
+	background-position: 93% center;
+}
+
+.box-conf .btn-sub-conf:hover {
+    /*
+        filter: alpha(opacity=80);
+    -ms-filter: "alpha(opacity=80)";
+    */
+    -webkit-opacity: 0.8;
+       -moz-opacity: 0.8;
+        -ms-opacity: 0.8;
+         -o-opacity: 0.8;
+            opacity: 0.8;
+    cursor:pointer;
+}
+
+
+.box-conf .btn-sub-conf:last-child {
+	float:right;
+	background-color: #bbb;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#bbb), to(#999));
+	background-image: -webkit-linear-gradient(top, #bbb, #999);
+	background-image: -moz-linear-gradient(top, #bbb, #999);
+	background-image: -ms-linear-gradient(top, #bbb, #999);
+	background-image: -o-linear-gradient(top, #bbb, #999);
+	background-image: linear-gradient(to bottom, #bbb, #999);
+	filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#bbb, endColorstr=#999);
+	background-position: 93% center;
+}
+
+.box-contact-confirm #submit{
+	float:none;
+
+}
+
+.contact-member_terms {
+	border: 1px solid #cc0000;
+	font-size: 12px;
+	margin: 10px;
+	padding: 10px;
+}
+.input-box {
+	float:left;
+}
+.rest-box {
+	float:right;
+	border:2px solid #0099FF;
+	padding:10px;
+}
+.inquire-txtarea textarea {
+	height: 110px;
+	width: 155%;
+}
+.inquire tr:last-child {
+	border-bottom: none;
+}
+.postal-txt {
+	height:20px;
+}
+.contact-member_terms ul {
+	margin-left: 1.0em;
+}
+.contact-member_terms li {
+	text-indent: -1.0em;
+	line-height:1.4;
+	margin-bottom:6px;
+}
+.tel-box > input {
+	height: 24px;
+}
+.free-area > input {
+	height: 28px;
+	width: 100%;
+}
+label {
+	float: left;
+}
+.caution > li {
+	list-style: none;
+}
+.txt-area > input {
+	height: 30px;
+}
+}
