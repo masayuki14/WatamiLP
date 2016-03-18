@@ -17,8 +17,16 @@ rows = []
 CSV.foreach(source_data) do |row|
   line += 1
 
-  Watami::Row.set_attributes(row)   if line == 1
-  Watami::Row.set_descriptions(row) if line == 2
+  if line == 1
+    Watami::Row.set_attributes(row)
+    next
+  end
+
+  if line == 2
+    Watami::Row.set_descriptions(row)
+    next
+  end
+
   rows << Watami::Row.new(row)
 end
 
