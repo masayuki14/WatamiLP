@@ -4,3 +4,4 @@ source_index_file: source_index.html
 source_image_dir:
 source_css_dir:
 source_javascript_dir:
+source_data: store_data.csv
