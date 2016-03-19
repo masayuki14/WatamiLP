@@ -11,7 +11,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="keywords" content="#">
 <meta name="description" content="#">
-<title><%= row.shopname %></title>
+<title><%= shopname %></title>
 <link href="css/style.css" rel="stylesheet">
 <link href="css/responsive.css" rel="stylesheet">
 <link href="css/cmn.css" rel="stylesheet">
@@ -34,7 +34,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <h1>吉祥寺　居酒屋 飲み放題 3時間 宴会 団体 大人数 おすすめ 貸切 個室 女子会</h1>
 <ul>
 <li class="logo"><a href="index.html"><img src="img/logo.png" alt="坐・和民"></a></li>
-<li><%= row.shopname %></li>
+<li><%= shopname %></li>
 <li class="sp-none h-tel">
 <p><img src="img/tel_wa01.png" alt="0422-23-8233"></p>
 <p><a onClick="goog_report_conversion" href="http://www.hotpepper.jp/strJ000247125/"><img src="img/btn_wa01.png" alt="WEBからのご予約・お問合せ"></a></p>
@@ -230,23 +230,23 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <div class="txt-content">
 <dl class="shop-info">
 <dt>店舗名</dt>
-<dd>坐・和民　吉祥寺パレスビル店</dd>
+<dd><%= shopname %></dd>
 <dt>住所</dt>
-<dd>東京都武蔵野市吉祥寺本町１-8-22<br>吉祥寺パレスビル3F</dd>
+<dd><%= address %></dd>
 <dt>アクセス</dt>
-<dd>吉祥寺駅中央口（北口）徒歩2分</dd>
+<dd><%= access %></dd>
 <dt>電話番号</dt>
-<dd>0422-23-8233</dd>
+<dd><%= phone %></dd>
 <dt>営業時間</dt>
-<dd>17:00～翌3:00<br>金土祝前17:00～翌5:00</dd>
+<dd><%= time %><br><%= timecomment %></dd>
 <dt>定休日</dt>
-<dd>年中無休</dd>
+<dd><%= holiday %></dd>
 </dl>
 </div>
 </div>
 </div><!-- /w-860 -->
 <!-- /店舗のご案内 -->
-<p class="copy">&copy; 坐・和民　吉祥寺パレスビル店 All Rights Reserved.</p>
+<p class="copy">&copy; <%= shopname %> All Rights Reserved.</p>
 <p id="page-top"><a href="#top">上に戻る</a></p>
 </div><!-- /wrap -->
 <!-- JS -->
@@ -283,15 +283,15 @@ map.addControl(new GScaleControl());
 map.setCenter(new GLatLng(35.704317, 139.579504), 18);
 
 var infoTabs = [
-new GInfoWindowTab('', '<font size="-1">坐・和民　吉祥寺パレスビル店</font>')
+  new GInfoWindowTab('', '<font size="-1"><%= shopname %></font>')
 ];
 
 var marker = new GMarker(map.getCenter());
 GEvent.addListener(marker, "click", function() {
-marker.openInfoWindowHtml("<font size=-1>坐・和民　吉祥寺パレスビル店</font>");
+  marker.openInfoWindowHtml("<font size=-1><%= shopname %></font>");
 });
 map.addOverlay(marker);
-marker.openInfoWindowHtml("<font size=-1>坐・和民　吉祥寺パレスビル店</font>");
+marker.openInfoWindowHtml("<font size=-1><%= shopname %></font>");
 }
 }
 //-->
