@@ -80,5 +80,20 @@ module Watami
         self.send("#{attr}=", data[index])
       end
     end
+
+    ### [erb_file]を読み込んで[output_file]に出力する
+    def write_template(root_dir, config)
+      erb_file    = File.join(root_dir, config['source_index_file'])
+      output_file = File.join(root_dir, config['output_dir'], "#{shopid}_#{config['output_file_name']}")
+
+      erb_text = nil
+      File.open(erb_file, 'r') do |file|
+        erb_text = file.read
+      end
+      File.open(output_file, 'w') do |file|
+        erb = ERB.new(erb_text)
+        file.write(erb.result(binding))
+      end
+    end
   end
 end
