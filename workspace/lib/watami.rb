@@ -12,6 +12,34 @@ module Watami
     ### class methods
     class << self
 
+      ### CSVファイルをロードしてRowクラスの配列にする
+      def parse(source_csv_file)
+        line = 0
+        rows = []
+
+        CSV.foreach(source_csv_file) do |row|
+          line += 1
+
+          # 1行目は属性名の定義
+          if line == 1
+            set_attributes(row)
+            next
+          end
+
+          # 2行目は属性の説明
+          # 今のところ使う予定はない
+          if line == 2
+            set_descriptions(row)
+            next
+          end
+
+          # インスタンスにする！
+          rows << Watami::Row.new(row)
+        end
+
+        return rows
+      end
+
       ### 属性の定義
       # attributes = ['name', 'shop'] の場合
       # name, name=, shop, shop= のアクセッサを定義する

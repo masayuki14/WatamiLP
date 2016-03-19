@@ -10,29 +10,11 @@ require File.join(ROOT_DIR, 'lib/watami.rb')
 
 
 ### データCSVを読み込んで1行ずつ Watami::Row のインスタンスにする
+rows = Watami::Row.parse(source_data)
 
-line = 0
-rows = []
+p rows.first
 
-CSV.foreach(source_data) do |row|
-  line += 1
-
-  # 1行目は属性名の定義
-  if line == 1
-    Watami::Row.set_attributes(row)
-    next
-  end
-
-  # 2行目は属性の説明
-  # 今のところ使う予定はない
-  if line == 2
-    Watami::Row.set_descriptions(row)
-    next
-  end
-
-  # インスタンスにする！
-  rows << Watami::Row.new(row)
-end
+exit
 
 require 'erb'
 
