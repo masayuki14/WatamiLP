@@ -10,6 +10,7 @@ source_data = File.join(ROOT_DIR, config['source_data'])
 require File.join(ROOT_DIR, 'lib/watami.rb')
 
 ### データCSVを読み込んで1行ずつ Watami::Row のインスタンスにする
+Watami::Row.load_master(File.join(ROOT_DIR, 'master'))
 rows = Watami::Row.parse(source_data)
 
 # 出力先のディレクトリを作成
