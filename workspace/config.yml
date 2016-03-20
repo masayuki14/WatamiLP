@@ -1,7 +1,7 @@
 output_dir: output
 output_file_name: index.html
 source_index_file: source_index.erb
-source_image_dir:
-source_css_dir:
-source_javascript_dir:
+source_image_dir: ../samples/za_watami_kichijyoji/img
+source_css_dir: ../samples/za_watami_kichijyoji/css
+source_javascript_dir: ../samples/za_watami_kichijyoji/js
 source_data: store_data.csv
