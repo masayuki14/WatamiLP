@@ -57,7 +57,19 @@ module Watami
       def set_attributes(attributes)
         attributes.each_index do |index|
           attr = attributes[index]
-          attr_accessor attr
+          # メソッドを定義
+          if @master_data[attr]
+            # 読み込みはマスタを返す
+            attr_accessor attr
+            alias_method("origin_#{attr}", attr)
+            define_method(attr) do
+              value = self.send("origin_#{attr}") # 設定値
+              self.class.master_data[attr][value]
+            end
+          else
+            # マスタがなければアクセッサを定義
+            attr_accessor attr
+          end
           @attr_to_index[attr] = index
           @index_to_attr[index] = attr
         end
@@ -79,6 +91,10 @@ module Watami
 
       def descriptions
         @descriptions
+      end
+
+      def master_data
+        @master_data
       end
     end
 
@@ -102,8 +118,10 @@ module Watami
         erb_text = file.read
       end
       File.open(output_file, 'w') do |file|
-        erb = ERB.new(erb_text)
-        file.write(erb.result(binding))
+        #erb = ERB.new(erb_text)
+        #file.write(erb.result(binding))
+        #eval(ERB.new(DATA.read).src, binding, __FILE__, __LINE__+2)
+        file.write(eval(ERB.new(erb_text).src, binding, __FILE__, __LINE__ + 2))
       end
     end
   end
