@@ -8,6 +8,7 @@ module Watami
     @attr_to_index = {}
     @index_to_attr = {}
     @descriptions  = {}
+    @master_data   = {}
 
 
     ### class methods
@@ -39,6 +40,15 @@ module Watami
         end
 
         return rows
+      end
+
+      ### マスタデータを読み込んでクラスインスタンス変数に格納
+      def load_master(master_dir)
+        Dir.glob(File.join(master_dir, '*.yml')) do |filename|
+          yaml = YAML.load_file(filename)
+          /(.*\/)?(.*)\.yml/.match(filename)
+          @master_data[$2] = yaml
+        end
       end
 
       ### 属性の定義
