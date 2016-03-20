@@ -1,11 +1,11 @@
-watami:
+watami/:
   logo: logo_watami.png
 
-casual_watami:
+casual_watami/:
   logo: logo_casual.png
 
-za_watami:
+za_watami/:
   logo: logo_zawatami.png
 
-wataminchi:
+wataminchi/:
   logo: logo_wataminchi.png
