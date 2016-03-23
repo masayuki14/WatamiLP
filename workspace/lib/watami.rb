@@ -16,6 +16,7 @@ module Watami
 
       ### CSVファイルをロードしてRowクラスの配列にする
       def parse(source_csv_file)
+        Encoding.default_external = 'UTF-8'
         line = 0
         rows = []
 
