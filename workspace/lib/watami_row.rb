@@ -19,8 +19,7 @@ module Watami
         Encoding.default_external = 'UTF-8'
         line = 0
         rows = []
-
-        CSV.foreach(source_csv_file) do |row|
+        CSV.foreach(source_csv_file, encoding: "Shift_JIS:UTF-8") do |row|
           line += 1
 
           # 1行目は属性名の定義
