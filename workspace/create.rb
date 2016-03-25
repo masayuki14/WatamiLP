@@ -18,10 +18,20 @@ output_dir = File.join(ROOT_DIR, config['output_dir'])
 Dir.mkdir(output_dir) unless Dir.exists?(output_dir)
 
 # img, css, js ディレクトリをコピー
+
 FileUtils.cp_r(File.join(ROOT_DIR, config['source_image_dir']), output_dir)
 FileUtils.cp_r(File.join(ROOT_DIR, config['source_css_dir']), output_dir)
 FileUtils.cp_r(File.join(ROOT_DIR, config['source_javascript_dir']), output_dir)
 
 # erb にデータをバインドして出力
-rows.each { |row| row.write_template(ROOT_DIR, config) }
+erb_file = File.join(ROOT_DIR, config['source_index_file'])
+rows.each do |row|
+  row.bind_erb(erb_file) do |binded|
+    # 出力ファイル名とディレクトリの作成
+    output_file     = File.join(ROOT_DIR, config['output_dir'], row.replace_by_attr(config['output_file_name']))
+    output_file_dir = File.dirname(File.expand_path(output_file))
+    FileUtils.mkdir_p(output_file_dir)
 
+    File.open(output_file, 'w') { |file| file.write(binded) }
+  end
+end
