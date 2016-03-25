@@ -114,5 +114,13 @@ module Watami
         yield(ERB.new(file.read).result(binding))
       end
     end
+
+    ### (:attr) 形式の文字列をその値に起きかえる
+    # (:category)/(:shopid)/index.html -> watami/44/index.html
+    def replace_by_attr(str)
+      self.class.index_to_attr.values.reduce(str) do |result, attr|
+        result.sub(Regexp.new(":#{attr}"), self.send(attr).to_s)
+      end
+    end
   end
 end

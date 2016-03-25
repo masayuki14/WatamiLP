@@ -4,8 +4,8 @@ output_dir: output
 # 出力ファイル名
 # CSVデータの項目名を含める場合は(:項目名)としてください。
 # ex)
-#   - (:shopid)_index.html             -> 44_index.html
-#   - (:category)/(:shopid)/index.html -> watami/44/index.html
+#   - :shopid_index.html           -> 44_index.html
+#   - :category/:shopid/index.html -> watami/44/index.html
 output_file_name: index.html
 
 # image, css, javascript のコピー方法
