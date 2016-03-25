@@ -57,6 +57,7 @@ module Watami
       def set_attributes(attributes)
         attributes.each_index do |index|
           attr = attributes[index]
+          next if attr.nil?
           # メソッドを定義
           attr_accessor attr
 
@@ -103,6 +104,7 @@ module Watami
     def initialize(data)
       data.each_index do |index|
         attr = self.class.index_to_attr[index]
+        next if attr.nil? || attr.empty?
         self.send("#{attr}=", data[index])
       end
     end
