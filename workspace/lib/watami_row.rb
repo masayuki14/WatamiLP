@@ -115,11 +115,20 @@ module Watami
       end
     end
 
-    ### (:attr) 形式の文字列をその値に起きかえる
-    # (:category)/(:shopid)/index.html -> watami/44/index.html
+    ### :attr 形式の文字列をその値に起きかえる
+    # :category/:shopid/index.html -> watami/44/index.html
     def replace_by_attr(str)
+      # 先頭が':'で始まるとSymbolになるので戻す
+      if str.class == Symbol
+        str = ':' + str.to_s
+      end
+
       self.class.index_to_attr.values.reduce(str) do |result, attr|
-        result.sub(Regexp.new(":#{attr}"), self.send(attr).to_s)
+        # マスタの場合は設定値にする
+        value = self.send(attr)
+        value = self.send("origin_#{attr}") if value.class == Hash || value.class == Array
+        return result if value.nil?
+        result.sub(Regexp.new("(:#{attr})"), value)
       end
     end
   end
