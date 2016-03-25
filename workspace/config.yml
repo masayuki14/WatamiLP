@@ -1,19 +1,19 @@
 # 出力ディレクトリ
-output_dir: output
+output_dir: lp
 
 # 出力ファイル名
 # CSVデータの項目名を含める場合は(:項目名)としてください。
 # ex)
 #   - :shopid_index.html           -> 44_index.html
 #   - :category/:shopid/index.html -> watami/44/index.html
-output_file_name: index.html
+output_file_name: :category/index_:shopid.html
 
 # image, css, javascript のコピー方法
 # 以下の3つから指定してください。
 #   - bulk     : `output_dir` にコピーします
 #   - separate : `output_file_name` にディレクトリが含まれる場合、最下層に合わせて出力します
 #   - auto     : 自動判別します
-assets_copy_mode: bulk
+assets_copy_mode: separate
 
 # テンプレートファイル名 ERB形式
 # http://magazine.rubyist.net/?0017-BundledLibraries
