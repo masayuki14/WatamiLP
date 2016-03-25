@@ -1,7 +1,33 @@
+# 出力ディレクトリ
 output_dir: output
+
+# 出力ファイル名
+# CSVデータの項目名を含める場合は(:項目名)としてください。
+# ex)
+#   - (:shopid)_index.html             -> 44_index.html
+#   - (:category)/(:shopid)/index.html -> watami/44/index.html
 output_file_name: index.html
+
+# image, css, javascript のコピー方法
+# 以下の3つから指定してください。
+#   - bulk     : `output_dir` にコピーします
+#   - separate : `output_file_name` にディレクトリが含まれる場合、最下層に合わせて出力します
+#   - auto     : 自動判別します
+assets_copy_mode: bulk
+
+# テンプレートファイル名 ERB形式
+# http://magazine.rubyist.net/?0017-BundledLibraries
+# `source_data` の項目名に一致する変数にその値が出力されます。
 source_index_file: source_index.erb
-source_image_dir: ../samples/za_watami_kichijyoji/img
-source_css_dir: ../samples/za_watami_kichijyoji/css
+
+# 画像,CSS,Javascript の各ファイルのディレクトリ
+# output_dir にコピーして出力されます
+source_image_dir:      ../samples/za_watami_kichijyoji/img
+source_css_dir:        ../samples/za_watami_kichijyoji/css
 source_javascript_dir: ../samples/za_watami_kichijyoji/js
+
+# テンプレートに出力するデータファイル
+# カンマ区切りのCSVファイルとなります。
+# 1行目は項目名、2行目は説明文、3行目以降をデータとして扱います。
+# 項目名は一意なものにしてください。
 source_data: store_data.csv
