@@ -108,20 +108,10 @@ module Watami
       end
     end
 
-    ### [erb_file]を読み込んで[output_file]に出力する
-    def write_template(root_dir, config)
-      erb_file    = File.join(root_dir, config['source_index_file'])
-      output_file = File.join(root_dir, config['output_dir'], "#{shopid}_#{config['output_file_name']}")
-
-      erb_text = nil
+    ### erb_file にデータをバインドしてブロックに返す
+    def bind_erb(erb_file)
       File.open(erb_file, 'r') do |file|
-        erb_text = file.read
-      end
-      File.open(output_file, 'w') do |file|
-        #erb = ERB.new(erb_text)
-        #file.write(erb.result(binding))
-        #eval(ERB.new(DATA.read).src, binding, __FILE__, __LINE__+2)
-        file.write(eval(ERB.new(erb_text).src, binding, __FILE__, __LINE__ + 2))
+        yield(ERB.new(file.read).result(binding))
       end
     end
   end
