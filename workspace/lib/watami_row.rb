@@ -7,7 +7,6 @@ module Watami
     ### class instance members
     @attr_to_index = {}
     @index_to_attr = {}
-    @descriptions  = {}
     @master_data   = {}
 
 
@@ -30,10 +29,7 @@ module Watami
 
           # 2行目は属性の説明
           # 今のところ使う予定はない
-          if line == 2
-            set_descriptions(row)
-            next
-          end
+          next if line == 2
 
           # インスタンスにする！
           rows << Watami::Row.new(row)
@@ -68,19 +64,8 @@ module Watami
               self.class.master_data[attr][value]
             end
           end
-          @attr_to_index[attr] = index
           @index_to_attr[index] = attr
         end
-      end
-
-      def set_descriptions(descriptions)
-        descriptions.each_index do |index|
-          @descriptions[index] = descriptions[index]
-        end
-      end
-
-      def attr_to_index
-        @attr_to_index
       end
 
       def index_to_attr
