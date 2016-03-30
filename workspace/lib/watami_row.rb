@@ -55,11 +55,9 @@ module Watami
       # attributes = ['name', 'shop'] の場合
       # name, name=, shop, shop= のアクセッサを定義する
       def set_attributes(attributes)
-        attributes.each_index do |index|
-          attr = attributes[index]
+        attributes.each_with_index do |attr, index|
           next if attr.nil?
-          # メソッドを定義
-          attr_accessor attr
+          attr_accessor attr # attrへのアクセッサ
 
           if @master_data[attr]
             # マスタがある場合はそのHashを返す
