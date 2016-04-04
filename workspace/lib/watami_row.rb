@@ -4,14 +4,11 @@ require 'erb'
 module Watami
   class Row
 
-    ### class instance members
-    @attr_to_index = {}
-    @index_to_attr = {}
-    @master_data   = {}
-
-
     ### class methods
     class << self
+
+      ### class instance members
+      attr_accessor :index_to_attr, :master_data
 
       ### CSVファイルをロードしてRowクラスの配列にする
       def parse(source_csv_file)
@@ -40,6 +37,8 @@ module Watami
 
       ### マスタデータを読み込んでクラスインスタンス変数に格納
       def load_master(master_dir)
+        @master_data ||= {}
+
         Dir.glob(File.join(master_dir, '*.yml')) do |filename|
           yaml = YAML.load_file(filename)
           /(.*\/)?(.*)\.yml/.match(filename)
@@ -51,6 +50,7 @@ module Watami
       # attributes = ['name', 'shop'] の場合
       # name, name=, shop, shop= のアクセッサを定義する
       def set_attributes(attributes)
+        @index_to_attr ||= {}
         attributes.each_with_index do |attr, index|
           next if attr.nil?
           attr_accessor attr # attrへのアクセッサ
@@ -66,18 +66,6 @@ module Watami
           end
           @index_to_attr[index] = attr
         end
-      end
-
-      def index_to_attr
-        @index_to_attr
-      end
-
-      def descriptions
-        @descriptions
-      end
-
-      def master_data
-        @master_data
       end
     end
 
