@@ -99,8 +99,11 @@ module Watami
         # マスタの場合は設定値にする
         value = self.send(attr)
         value = self.send("origin_#{attr}") if value.class == Hash || value.class == Array
-        return result if value.nil?
-        result.sub(Regexp.new("(:#{attr})"), value)
+        if value.nil?
+          result
+        else
+          result.sub(Regexp.new("(:#{attr})"), value)
+        end
       end
     end
   end
